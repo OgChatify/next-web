@@ -1,24 +1,16 @@
-# Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
+## OgChatify is the newer and updated ersion of chatify.
 
-![Copy of Copy of Copy of Fullstack Twitter Clone (5)](https://github.com/AntonioErdeljac/next13-discord-clone/assets/23248726/14e25e4f-eb83-44dd-8b97-4f2666b89386)
+Features Included:
 
-This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
-
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
-
-Features:
-
-- Real-time messaging using Socket.io
-- Send attachments as messages using UploadThing
-- Delete & Edit messages in real time for all users
+- Real-time messaging
+- Delete & Edit messages in real time
 - Create Text, Audio and Video call Channels
 - 1:1 conversation between members
 - 1:1 video calls between members
 - Member management (Kick, Role change Guest / Moderator)
 - Unique invite link generation & full working invite system
-- Infinite loading for messages in batches of 10 (tanstack/query)
 - Server creation and customization
-- Beautiful UI using TailwindCSS and ShadcnUI
+- Beautiful UI
 - Full responsivity and mobile UI
 - Light / Dark mode
 - Websocket fallback: Polling with alerts
@@ -33,13 +25,13 @@ Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next13-discord-clone.git
+git clone https://github.com/OgChatify/next-web
 ```
 
 ### Install packages
 
 ```shell
-npm i
+yarn install
 ```
 
 ### Setup .env file
@@ -61,11 +53,13 @@ UPLOADTHING_APP_ID=
 LIVEKIT_API_KEY=
 LIVEKIT_API_SECRET=
 NEXT_PUBLIC_LIVEKIT_URL=
+
+NEXT_PUBLIC_SITE_URL=
 ```
 
 ### Setup Prisma
 
-Add MySQL Database (I used PlanetScale)
+Add Postgresql Database (I used Supabase)
 
 ```shell
 npx prisma generate
@@ -76,13 +70,14 @@ npx prisma db push
 ### Start the app
 
 ```shell
-npm run dev
+yarn dev
 ```
 
 ## Available commands
 
-Running commands with npm `npm run [command]`
+Running commands with npm `yarn [command]`
 
 | command | description                              |
 | :------ | :--------------------------------------- |
 | `dev`   | Starts a development instance of the app |
+| `build` | Build the application                    |
